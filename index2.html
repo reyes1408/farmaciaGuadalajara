@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0%;
+            margin: 0%;
+        }
+
+        h1 {
+            font-size: xx-large;
+            font-weight: lighter;
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: medium;
+            color: #444444;
+        }
+
+        p {
+            color: #6F6F6F;
+        }
+
+        p > p {
+
+        }
+
+        .slide-container {
+            width: 96%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 2%;
+            box-shadow: 0px 0px 6px rgb(0, 0, 0, 0.1);
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            padding: 0% 4% 2% 4%;
+        }
+
+        .image-container {
+            width: 30%;
+            /* Ajusta el ancho según tus necesidades */
+            margin-bottom: 20px;
+            padding: 1% 2% 1% 2%;
+            text-align: center;
+        }
+
+        .image-container:hover {
+            box-shadow: 0px 0px 6px rgb(0, 0, 0, 0.1);
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin: 0% 7% 0% 7%;
+        }
+
+        .prev-slide,
+        .next-slide {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            color: #98A394;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 6vh;
+        }
+
+        .prev-slide {
+            left: 25px;
+        }
+
+        .next-slide {
+            right: 25px;
+        }
+
+        .prev-slide:hover,
+        .next-slide:hover {
+            color: #01579b;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 60%;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            font-weight: bold;
+        }
+        
+        .current-price {
+            color: #ED1C24;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-container">
+        <h1>Productos Destacados</h1>
+        <!-- Página 1 -->
+        <div class="page active">
+            <div class="image-container">
+                <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1314912_A_168_AL.jpg"
+                    alt="Imagen 1">
+                <h2>NEUTEK</h2>
+                <p> Monitor Neutek de Presión Sanguínea Automático de Muñeca, 1 pz.</p>
+                <p class="old-price">$682.10</p>
+                <p class="current-price">$458.51</p>
+            </div>
+            <div class="image-container">
+                <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1405004_A_168_AL.jpg"
+                    alt="Imagen 2">
+                <h2>Staquis</h2>
+                <p>Staquis 2% Ungüento, 30 gr.</p>
+                <p class="old-price">$682.10</p>
+                <p class="current-price">$458.51</p>
+            </div>
+            <div class="image-container">
+                <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1406159_A_168_AL.jpg"
+                    alt="Imagen 3">
+                <h2>MICROBIOT</h2>
+                <p> Microbiot Fit 180 mg, 30 Cápsulas.</p>
+                <p class="old-price">$682.10</p>
+                <p class="current-price">$458.51</p>
+            </div>
+            <div class="image-container">
+                <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1379577_A_168_AL.jpg"
+                    alt="Imagen 4">
+                <h2>BACFIL</h2>
+                <p> Bacfil 6 gr, 30 Sobres.</p>
+                <p class="old-price">$682.10</p>
+                <p class="current-price">$458.51</p>
+            </div>
+            <div class="image-container">
+                <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1357522_A_168_AL.jpg"
+                    alt="Imagen 5">
+                <h2>PHARMALIFE</h2>
+                <p> Esomeprazol 40 mg, 28 Tabletas Pharmalife.</p>
+                <p class="old-price">$682.10</p>
+                <p class="current-price">$458.51</p>
+            </div>
+            <div class="image-container">
+                <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/10855_A_168_AL.jpg"
+                    alt="Imagen 6">
+                <h2>DOLO-NEUROBIÓN</h2>
+                <p> Dolo-Neurobión Forte, 30 Tabletas.</p>
+                <p class="old-price">$682.10</p>
+                <p class="current-price">$458.51</p>
+            </div>
+        </div>
+
+        <!-- Página 2 -->
+        <div class="page">
+            <!-- Aquí coloca las imágenes de la segunda página -->
+            <div class="image-container">
+                <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/942596_A_168_AL.jpg"
+                    alt="Imagen 1.2">
+                <h2>CIALIS</h2>
+                <p> Cialis 20 mg, 4 Tabletas.</p>
+                <p class="old-price">$682.10</p>
+                <p class="current-price">$458.51</p>
+            </div>
+            <div class="image-container">
+                <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/950211_A_168_AL.jpg"
+                    alt="Imagen 2.2">
+                <h2>SINUBERASE</h2>
+                <p> Sinuberase Probióticos Suspensión Basillus Clausii 2 Billones de UFC, 10 Ampolletas.</p>
+                <p class="old-price">$682.10</p>
+                <p class="current-price">$458.51</p>
+            </div>
+            <div class="image-container">
+                <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/994006_A_168_AL.jpg"
+                    alt="Imagen 3.2">
+                <h2>VERMOX</h2>
+                <p> Vermox Plus 300mg/150mg, 2 Tabletas.</p>
+                <p class="old-price">$682.10</p>
+                <p class="current-price">$458.51</p>
+            </div>
+            <div class="image-container">
+                <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1136992_A_168_AL.jpg"
+                    alt="Imagen 4.2">
+                <h2>CETAPHIL</h2>
+                <p> Cetaphil Crema Hidratante, 453 gr.</p>
+                <p class="old-price">$682.10</p>
+                <p class="current-price">$458.51</p>
+            </div>
+            <div class="image-container">
+                <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1153862_A_168_AL.jpg"
+                    alt="Imagen 5.2">
+                <h2>SIMILAC</h2>
+                <p> Fórmula Infantil Similac Total Comfort 2 Sabor a Vainilla (Edad 1 a 3 Años), 820 gr.</p>
+                <p class="old-price">$682.10</p>
+                <p class="current-price">$458.51</p>
+            </div>
+            <div class="image-container">
+                <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/63541_A_168_AL.jpg"
+                    alt="Imagen 6.2">
+                <h2>ALDACTONE</h2>
+                <p> Aldactone A 25 mg, 30 Tabletas.</p>
+                <p class="old-price">$682.10</p>
+                <p class="current-price">$458.51</p>
+            </div>
+        </div>
+
+        <!-- Página 3 -->
+        <div class="page">
+            <!-- Aquí coloca las imágenes de la tercera página -->
+            <div class="image-container">
+                <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1261185_A_168_AL.jpg"
+                    alt="Imagen 1.3">
+                <h2>NEUTROGENA</h2>
+                <p> Hidratante Facial Neutrogena Hydro Boost Water Gel, 50 gr.</p>
+                <p class="old-price">$682.10</p>
+                <p class="current-price">$458.51</p>
+            </div>
+            <div class="image-container">
+                <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/886726_A_168_AL.jpg"
+                    alt="Imagen 2.3">
+                <h2>MOTRIN</h2>
+                <p> Motrin Suspensión Infantil, 120 ml.</p>
+                <p class="old-price">$682.10</p>
+                <p class="current-price">$458.51</p>
+            </div>
+            <div class="image-container">
+                <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1237063_S_168_F.jpg"
+                    alt="Imagen 3.3">
+                <h2>GILLETTE</h2>
+                <p> Máquinas para Afeitar Gillette Prestobarba 3 Bodysense Desechables, 4 pzas.</p>
+                <p class="old-price">$682.10</p>
+                <p class="current-price">$458.51</p>
+            </div>
+            <div class="image-container">
+                <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1025201_A_168_AL.jpg"
+                    alt="Imagen 4.3">
+                <h2>LOMOTIL</h2>
+                <p> Antidiarreico Lomotil 8 Tabletas, 2 mg.</p>
+                <p class="old-price">$682.10</p>
+                <p class="current-price">$458.51</p>
+            </div>
+            <div class="image-container">
+                <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1099345_A_168_AL.jpg"
+                    alt="Imagen 5.3">
+                <h2>DOG CHOW</h2>
+                <p> Purina Dog Chow Adulto Minis y Pequeños con Extralife, 2 Kg.</p>
+                <p class="old-price">$682.10</p>
+                <p class="current-price">$458.51</p>
+            </div>
+            <div class="image-container">
+                <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1299522_A_168_AL.jpg"
+                    alt="Imagen 6.3">
+                <h2>FRISO</h2>
+                <p> Fórmula Infantil Friso Gold 3 Joven Explorador Sabor Vainilla (Edad 1 a 3 Años), 1.2 kg.</p>
+                <p class="old-price">$682.10</p>
+                <p class="current-price">$458.51</p>
+            </div>
+        </div>
+        <button class="prev-slide" onclick="previousPage()">&#9001;</button>
+        <button class="next-slide" onclick="nextPage()">&#9002;</button>
+    </div>
+
+    <script>
+        let currentPage = 0;
+        const pages = document.querySelectorAll('.page');
+
+        function showPage(pageIndex) {
+            pages.forEach((page, index) => {
+                if (index === pageIndex) {
+                    page.classList.add('active');
+                } else {
+                    page.classList.remove('active');
+                }
+            });
+        }
+
+        function nextPage() {
+            currentPage = (currentPage + 1) % pages.length;
+            showPage(currentPage);
+        }
+
+        function previousPage() {
+            currentPage = (currentPage - 1 + pages.length) % pages.length;
+            showPage(currentPage);
+        }
+
+        // Avanzar automáticamente cada 3 segundos
+        setInterval(nextPage, 8000);
+    </script>
+</body>
+
+</html>
