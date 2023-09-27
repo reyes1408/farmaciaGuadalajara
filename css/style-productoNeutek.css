@@ -1,0 +1,238 @@
+body {
+    margin: 0%;
+    margin-top: -0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    background-color: #F9F9F9;
+}
+
+p{
+    margin: 0%;
+    color: #6F6F6F;
+    font-size: medium;
+    font-weight: 200;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: 200;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    font-size: medium;
+    color: #444444;
+}
+
+section {
+    width: 96%;
+    padding: 1% 2% 0% 2%;
+}
+
+nav {
+    /* position: fixed; */
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 18vh;
+    background-color: white;
+    align-items: center;
+    padding-top: -1%;
+    /* overflow: hidden; */
+    z-index: 2;
+    
+}
+
+input:focus {
+    outline: none;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    font-size: large;
+}
+
+#div-envios{
+    background-color: #019FE3;
+    width: 100%;
+    height: 6vh;
+    padding-top: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    /* font-size: larger; */
+    letter-spacing: 1px;
+}
+
+.nav-div-li {
+    margin-right: 5%;
+}
+
+.li2 {
+    border-right: 1px solid #CACCCE;
+    padding-left: 3%;
+    display: flex;
+    padding-right: 4%;
+}
+
+#nav-div-li-first {
+    padding-left: 6%;
+    padding-right: 3%;
+    display: flex;
+    border-right: 1px solid #CACCCE;
+}
+
+#nav-div-a {
+    margin-left: 2%;
+    background-color: #0277BD;
+    padding: 8px 10px 2px 8px;
+    border-radius: 20%;
+}
+
+a {
+    text-decoration: none;
+    color: #302F31;
+}
+
+#nav-principal {
+    width: 90%;
+    display: flex;
+    padding: 1% 5% 1% 5%;
+    align-items: center;
+}
+
+#nav-img-home {
+    width: 28%;
+    height: fit-content;
+    margin-right: 12%;
+}
+
+#nav-principal-list {
+    display: flex;
+    width: 55%;
+}
+
+#nav-barSerch {
+    width: 90%;
+    height: 9vh;
+    background-color: #025AA5;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+    font-size: medium;
+    justify-content: space-between;
+}
+
+#nav-barSerch-input {
+    width: 42%;
+    height: 5vh;
+    border: none;
+    
+}
+
+#ruta {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+#descripcion {
+    text-align: left;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+#producto {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+#img-productos {
+    width: 14%;
+    padding-top: 2%;
+}
+
+#img-productos img {
+    width: 100%;
+    margin: 10%;
+}
+
+#img-principal {
+    width: 100%;
+}
+
+#img-principal img {
+    width: 90%;
+    height: fit-content;
+    margin: 1% 5% 5% 5%;
+    box-shadow: 0px 0px 6px rgba(34, 62, 224, 0.2);
+}
+
+#descripcion-producto {
+    width: 100%;
+    padding: 3%;
+}
+
+#descripcion-detalles {
+    color: #025AA5;
+    font-size: x-large;
+    font-weight: 400;
+    margin-bottom: 10%;
+}
+
+#descripcion-precio {
+    font-size: xx-large;
+    font-weight: 600;
+    text-decoration: line-through;
+    color: #CACCCE;
+}
+
+#descripcion-precioReal {
+    font-size: xx-large;
+    font-weight: 600;
+    color: #ED1C24;
+    margin-left: 2%;
+}
+
+#descripcion-mejoresPrecios {
+    width: 45%;
+    text-align: center;
+    font-size: x-large;
+}
+
+#producto-carrito {
+    width: 100%;
+    margin-top: 5%;
+}
+
+#producto-carrito img {
+    width: 110%;
+}
+
+#volver {
+    position: fixed;
+    bottom: 15%;
+    right: 10%;
+    width: 50px;
+    height: 50px;
+    background-color: #B5B5B5;
+    border-radius: 50%;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    opacity: 0.7;
+}
+
+#volver:hover {
+    background-color: #01579b;
+    border: 4px solid #0277BD;
+}

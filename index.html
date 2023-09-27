@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./img/icon-favicon.ico" type="image/x-icon">
     <title>Farmacias Guadalajara a Domicilio</title>
 </head>
@@ -140,15 +140,18 @@
             <!-- Página 1 -->
             <div class="page active">
                 <button class="prev-slide-2" onclick="previousPage()">&#9001;</button>
+                
                 <div class="image-container">
-                    <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1314912_A_168_AL.jpg"
+                        <a href="./vistas/productoNeutek.html">
+                        <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1314912_A_168_AL.jpg"
                         alt="Imagen 1">
-                    <h2>NEUTEK</h2>
-                    <p> Monitor Neutek de Presión Sanguínea Automático de Muñeca, 1 pz.</p>
-                    <p class="old-price">$682.10</p>
-                    <p class="current-price">$458.51</p>
-                </div>
-                <div class="image-container">
+                        <h2>NEUTEK</h2>
+                        <p> Monitor Neutek de Presión Sanguínea Automático de Muñeca, 1 pz.</p>
+                        <p class="old-price">$682.10</p>
+                        <p class="current-price">$458.51</p>
+                    </a>
+                    </div>
+                    <div class="image-container">
                     <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1405004_A_168_AL.jpg"
                         alt="Imagen 2">
                     <h2>Staquis</h2>
@@ -447,65 +450,75 @@
             <a href="" id="section-art-a">Ver todos los articulos</a>
         </section>
         <div id=" div-ofertas-linea">
-            <h1>Recomendado para Ti</h1>
+            <section class="slide-container">
+                <h1>Recomendado para Ti</h1>
+                <!-- Página 1 -->
+                <div class="page active">
+                    <button class="prev-slide-2" onclick="previousPage()">&#9001;</button>
+                    
+                        <div class="image-container">
+                            <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/861243_A_168_AL.jpg"
+                            alt="Imagen 1">
+                            <h2>ALKA-SELTZER</h2>
+                            <p>  Alka-Seltzer Lima-Limón Alivio del Malestar Estomacal y Dolor de Cabeza, 12 Tabletas Efervescentes.</p>
+                            <p class="old-price">$682.10</p>
+                            <p class="current-price">$458.51</p>
+                        </div>
+                    
+                    <div class="image-container">
+                        <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1144472_A_168_AL.jpg"
+                            alt="Imagen 2">
+                        <h2>ALKA-SELTZER</h2>
+                        <p> Alka-Seltzer Boost Rápido Alivio del Dolor, Ayuda a Reanimar y Reponer tu Cuerpo 10 Tabletas Efervescentes.</p>
+                        <p class="old-price">$682.10</p>
+                        <p class="current-price">$458.51</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/600920_A_168_AL.jpg"
+                            alt="Imagen 3">
+                        <h2>ALKA-SELTZER</h2>
+                        <p>  Alka-Seltzer Antiácido y Analgésico para Alivio del Malestar Estomacal y Dolor de Cabeza, 12 Tabletas Efervescentes.</p>
+                        <p class="old-price">$682.10</p>
+                        <p class="current-price">$458.51</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1368796_A_168_AL.jpg"
+                            alt="Imagen 4">
+                        <h2>IBEROGAST</h2>
+                        <p> Iberogast Solución Oral, 20 ml.</p>
+                        <p class="old-price">$682.10</p>
+                        <p class="current-price">$458.51</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1368800_A_168_AL.jpg"
+                            alt="Imagen 5">
+                        <h2>IBEROGAST</h2>
+                        <p> Iberogast Solución Oral, 50 ml.</p>
+                        <p class="old-price">$682.10</p>
+                        <p class="current-price">$458.51</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="https://www.movil.farmaciasguadalajara.com/wcsstore/FGCAS/wcs/products/1375997_A_168_AL.jpg"
+                            alt="Imagen 6">
+                        <h2>IBEROGAST</h2>
+                        <p> Iberogast Solución Oral, 100 ml.</p>
+                        <p class="old-price">$682.10</p>
+                        <p class="current-price">$458.51</p>
+                    </div>
+                    <button class="next-slide-2" onclick="nextPage()">&#9002;</button>
+                </div>
+            </section>
         </div>
         <section>
             <img style="width: 100%;" src="./img/servicios.png" alt="">
         </section>
         <footer>
             <img style="width: 100%;" src="./img/footer.png" alt="">
+            <a id="volver" href="#div-envios">&#8593;</a>
         </footer>
     </menu>
 </body>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const slides = document.querySelector(".slides");
-        const prevBtn = document.querySelector(".prev-slide");
-        const nextBtn = document.querySelector(".next-slide");
-
-        let currentIndex = 0;
-
-        prevBtn.addEventListener("click", () => {
-            currentIndex = (currentIndex - 1 + 8) % 8;
-            updateSlider();
-        });
-
-        nextBtn.addEventListener("click", () => {
-            currentIndex = (currentIndex + 1) % 8;
-            updateSlider();
-        });
-
-        function updateSlider() {
-            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
-    });
-
-    let currentPage = 0;
-    const pages = document.querySelectorAll('.page');
-
-    function showPage(pageIndex) {
-        pages.forEach((page, index) => {
-            if (index === pageIndex) {
-                page.classList.add('active');
-            } else {
-                page.classList.remove('active');
-            }
-        });
-    }
-
-    function nextPage() {
-        currentPage = (currentPage + 1) % pages.length;
-        showPage(currentPage);
-    }
-
-    function previousPage() {
-        currentPage = (currentPage - 1 + pages.length) % pages.length;
-        showPage(currentPage);
-    }
-
-    // Avanzar automáticamente cada 3 segundos
-    setInterval(nextPage, 8000);
-</script>
+<script src="./script/script.js"></script>
 
 </html>
